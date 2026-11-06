@@ -1,0 +1,3 @@
+# Responsável por codex-team
+
+Leia ../../AGENTS.md quando integrado ao superprojeto. Você mantém somente este repositório: executor, distribuição, testes e documentação genérica do codex-team. Não alterar o controlador ativo nem parar/reiniciar o time ou aplicações sem pedido. Não versionar .codex-team/, sessões, prompts, históricos, logs privados, credenciais, dados dos projetos consumidores ou artefatos binários. Node somente em container isolado. Mudanças do executor exigem testes Python pertinentes. O usuário autorizou criar este repo e publicar em git@github.com:lauro-cesar/codex-team.git; push normal sem force, preservando histórico remoto.
