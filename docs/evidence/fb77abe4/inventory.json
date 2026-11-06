@@ -1,0 +1,466 @@
+{
+  "task": "fb77abe41d2d432da57c050e25c6a72f",
+  "sources": [
+    {
+      "path": "README.md",
+      "bytes": 3913,
+      "sha256": "a1d90dbb44950c3753f524d691254be935d90eef83f216237b37618a19172810",
+      "findings": []
+    },
+    {
+      "path": "PROVENANCE.json",
+      "bytes": 598,
+      "sha256": "34188cfcc7a0b2d22ce9eb06c3744a761959bf2afdbea3b9c6cb6e847177f3b1",
+      "findings": []
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 561,
+      "sha256": "70eff7a43a2e2059a3d420b31c80d914fe0c90022dffae2e06c9bd849eee4736",
+      "findings": []
+    },
+    {
+      "path": "MANIFEST.in",
+      "bytes": 88,
+      "sha256": "21c7404c0cbe4a7407102e76cbce62424b330622b9d3136dd1b873e8c88bd68c",
+      "findings": []
+    },
+    {
+      "path": "setup.py",
+      "bytes": 37,
+      "sha256": "76189f7511a9eb8dab0ccaf022097f598fa32c3026ce2c2174ea7e7c3fccc71e",
+      "findings": []
+    },
+    {
+      "path": "src/codex_team/__init__.py",
+      "bytes": 22,
+      "sha256": "df0544b36403ffb39c4e50fdedc65d09e8b37768546c927419e20ef304088eb9",
+      "findings": []
+    },
+    {
+      "path": "src/codex_team/__main__.py",
+      "bytes": 64,
+      "sha256": "cf00601808adeba1c0a6a8b13326f6aa6b76e8616e69f6c0cf22bcf4c5e4e321",
+      "findings": []
+    },
+    {
+      "path": "src/codex_team/executor.py",
+      "bytes": 57640,
+      "sha256": "5f02b1d7c0401fa07a1501d98f2433374fcbda5652e8f66402a0081b1a7af388",
+      "findings": []
+    },
+    {
+      "path": "templates/AGENTS.md",
+      "bytes": 6689,
+      "sha256": "56bd4c8cb2535b713fe39e4712bb1823c54acff42a7f87aa035a325e218f0aa3",
+      "findings": []
+    },
+    {
+      "path": "tests/test_team_executor.py",
+      "bytes": 19307,
+      "sha256": "ef452f9da0a02f770a6dc214c67914429aa3d7f99b0d619ce1b36f7475960146",
+      "findings": []
+    },
+    {
+      "path": "tests/test_package_sources.py",
+      "bytes": 3088,
+      "sha256": "98eb509ba11c3c35b36432bfe68e62d6bc0aae913dec41093c7b814347804c0d",
+      "findings": []
+    },
+    {
+      "path": "tools/package_codex_team.py",
+      "bytes": 7735,
+      "sha256": "dd7d85b9434ebb9db3135bff4e39ab66b1b12214eb6812aa9e0001d5601e514b",
+      "findings": []
+    }
+  ],
+  "historical_artifacts": [
+    {
+      "artifact": "root/dist/codex-team-0.3.0.tar.gz",
+      "sha256": "f5ec314a03a29e70875ba3bbaa120e3579973cf54a4ecbd4a0d64d95a8b38fbb",
+      "members": [
+        {
+          "path": "codex-team-0.3.0/MANIFEST.in",
+          "bytes": 86,
+          "sha256": "ced37809b5e8db313b4f155e394afe562ce6227d1f5f95529c6fa794143f124c",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/PKG-INFO",
+          "bytes": 3410,
+          "sha256": "d4223e1896d33c96be5433cfc20b9af1d36ba4ce0ef9f1a3f6c71df2d9d270d8",
+          "findings": [
+            {
+              "category": "consumer_reference",
+              "lines": [
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "path": "codex-team-0.3.0/PROVENANCE.json",
+          "bytes": 598,
+          "sha256": "dc31f3070408ca990a89ba8584924842526e2013d2e3e3467ed5a65042b55b97",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/README.md",
+          "bytes": 3210,
+          "sha256": "1c749a1a855e8486aad841f1aa1fcb56073f3e679bcf3efc1147a50029dd9fe8",
+          "findings": [
+            {
+              "category": "consumer_reference",
+              "lines": [
+                52
+              ]
+            }
+          ]
+        },
+        {
+          "path": "codex-team-0.3.0/pyproject.toml",
+          "bytes": 469,
+          "sha256": "90ffff18c77c96f79beea2d47deee7c6db8e912aa87d7de7cee3175606e2b472",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/setup.cfg",
+          "bytes": 38,
+          "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/setup.py",
+          "bytes": 37,
+          "sha256": "76189f7511a9eb8dab0ccaf022097f598fa32c3026ce2c2174ea7e7c3fccc71e",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team/__init__.py",
+          "bytes": 22,
+          "sha256": "df0544b36403ffb39c4e50fdedc65d09e8b37768546c927419e20ef304088eb9",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team/__main__.py",
+          "bytes": 64,
+          "sha256": "cf00601808adeba1c0a6a8b13326f6aa6b76e8616e69f6c0cf22bcf4c5e4e321",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team/executor.py",
+          "bytes": 48536,
+          "sha256": "b1422ed6867315c12a9b7323c4e59a86fda4cff244fe395fc54f617613541004",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team.egg-info/PKG-INFO",
+          "bytes": 3410,
+          "sha256": "d4223e1896d33c96be5433cfc20b9af1d36ba4ce0ef9f1a3f6c71df2d9d270d8",
+          "findings": [
+            {
+              "category": "consumer_reference",
+              "lines": [
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team.egg-info/SOURCES.txt",
+          "bytes": 383,
+          "sha256": "5125e88e291d5f2f7251a5e0a5c01814cb7d118a437dc31cd935e85717bee9a7",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team.egg-info/dependency_links.txt",
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team.egg-info/entry_points.txt",
+          "bytes": 118,
+          "sha256": "f5705d768cf9639f37816224eba1a945dc514ed0d015644ff7665205329250c9",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/src/codex_team.egg-info/top_level.txt",
+          "bytes": 11,
+          "sha256": "f7e09db4da00010279f74c1a99b2dc0a7ff99322dd73dc24bece71ee915ec900",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/templates/AGENTS.md",
+          "bytes": 6946,
+          "sha256": "0b88391f1d0e61f5da029f9447005aea9e4f60fb97733a251e9e5fef18123b9f",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.0/tests/test_team_executor.py",
+          "bytes": 10096,
+          "sha256": "9eb7f73360463db89ea5df398e413d63cfb5a08d8a9012a3c8573340c88ba594",
+          "findings": []
+        }
+      ]
+    },
+    {
+      "artifact": "root/dist/codex_team-0.3.0-py3-none-any.whl",
+      "sha256": "fe2c116e69606397b9d7ef98b849e3d011039f66ba7fa08255197f01ee84821c",
+      "members": [
+        {
+          "path": "codex_team/__init__.py",
+          "bytes": 22,
+          "sha256": "df0544b36403ffb39c4e50fdedc65d09e8b37768546c927419e20ef304088eb9",
+          "findings": []
+        },
+        {
+          "path": "codex_team/__main__.py",
+          "bytes": 64,
+          "sha256": "cf00601808adeba1c0a6a8b13326f6aa6b76e8616e69f6c0cf22bcf4c5e4e321",
+          "findings": []
+        },
+        {
+          "path": "codex_team/executor.py",
+          "bytes": 48536,
+          "sha256": "b1422ed6867315c12a9b7323c4e59a86fda4cff244fe395fc54f617613541004",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.0.dist-info/METADATA",
+          "bytes": 3410,
+          "sha256": "d4223e1896d33c96be5433cfc20b9af1d36ba4ce0ef9f1a3f6c71df2d9d270d8",
+          "findings": [
+            {
+              "category": "consumer_reference",
+              "lines": [
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "path": "codex_team-0.3.0.dist-info/WHEEL",
+          "bytes": 92,
+          "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.0.dist-info/entry_points.txt",
+          "bytes": 118,
+          "sha256": "f5705d768cf9639f37816224eba1a945dc514ed0d015644ff7665205329250c9",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.0.dist-info/top_level.txt",
+          "bytes": 11,
+          "sha256": "f7e09db4da00010279f74c1a99b2dc0a7ff99322dd73dc24bece71ee915ec900",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.0.dist-info/RECORD",
+          "bytes": 643,
+          "sha256": "660a92aedd7cabeecba036693523600e708a09e7d0cf8570563f85fb2611576d",
+          "findings": []
+        }
+      ],
+      "record_hashes": "PASS"
+    }
+  ],
+  "candidate_artifacts": [
+    {
+      "artifact": "temporary-candidate/dist/codex-team-0.3.1.dev0.tar.gz",
+      "sha256": "af3b8db3432ed5db5b55a184e26f14a0ae80b3e84176756294223b0d4a3eb32e",
+      "members": [
+        {
+          "path": "codex-team-0.3.1.dev0/MANIFEST.in",
+          "bytes": 88,
+          "sha256": "21c7404c0cbe4a7407102e76cbce62424b330622b9d3136dd1b873e8c88bd68c",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/PKG-INFO",
+          "bytes": 4118,
+          "sha256": "f4b38cccbdffe6f0ffb20ae12536ccb7840e1a1e0bd0a1d244c8885739651ff7",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/PROVENANCE.json",
+          "bytes": 598,
+          "sha256": "34188cfcc7a0b2d22ce9eb06c3744a761959bf2afdbea3b9c6cb6e847177f3b1",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/README.md",
+          "bytes": 3913,
+          "sha256": "a1d90dbb44950c3753f524d691254be935d90eef83f216237b37618a19172810",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/pyproject.toml",
+          "bytes": 566,
+          "sha256": "8c6d2c475bbe38b00e2034761c78bc66a2eeb76b2dfb11a721cd4e803f2d1a7d",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/setup.cfg",
+          "bytes": 38,
+          "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/setup.py",
+          "bytes": 37,
+          "sha256": "76189f7511a9eb8dab0ccaf022097f598fa32c3026ce2c2174ea7e7c3fccc71e",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team/__init__.py",
+          "bytes": 22,
+          "sha256": "df0544b36403ffb39c4e50fdedc65d09e8b37768546c927419e20ef304088eb9",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team/__main__.py",
+          "bytes": 64,
+          "sha256": "cf00601808adeba1c0a6a8b13326f6aa6b76e8616e69f6c0cf22bcf4c5e4e321",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team/executor.py",
+          "bytes": 57640,
+          "sha256": "5f02b1d7c0401fa07a1501d98f2433374fcbda5652e8f66402a0081b1a7af388",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team.egg-info/PKG-INFO",
+          "bytes": 4118,
+          "sha256": "f4b38cccbdffe6f0ffb20ae12536ccb7840e1a1e0bd0a1d244c8885739651ff7",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team.egg-info/SOURCES.txt",
+          "bytes": 383,
+          "sha256": "5125e88e291d5f2f7251a5e0a5c01814cb7d118a437dc31cd935e85717bee9a7",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team.egg-info/dependency_links.txt",
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team.egg-info/entry_points.txt",
+          "bytes": 118,
+          "sha256": "f5705d768cf9639f37816224eba1a945dc514ed0d015644ff7665205329250c9",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/src/codex_team.egg-info/top_level.txt",
+          "bytes": 11,
+          "sha256": "f7e09db4da00010279f74c1a99b2dc0a7ff99322dd73dc24bece71ee915ec900",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/templates/AGENTS.md",
+          "bytes": 6689,
+          "sha256": "56bd4c8cb2535b713fe39e4712bb1823c54acff42a7f87aa035a325e218f0aa3",
+          "findings": []
+        },
+        {
+          "path": "codex-team-0.3.1.dev0/tests/test_team_executor.py",
+          "bytes": 19307,
+          "sha256": "ef452f9da0a02f770a6dc214c67914429aa3d7f99b0d619ce1b36f7475960146",
+          "findings": []
+        }
+      ],
+      "sentinel_exclusion": "PASS"
+    },
+    {
+      "artifact": "temporary-candidate/dist/codex_team-0.3.1.dev0-py3-none-any.whl",
+      "sha256": "f0e8a525ee94baa82bcf46719f113306be8dd81521c05a01c30346fd6c8a5f3b",
+      "members": [
+        {
+          "path": "codex_team/__init__.py",
+          "bytes": 22,
+          "sha256": "df0544b36403ffb39c4e50fdedc65d09e8b37768546c927419e20ef304088eb9",
+          "findings": []
+        },
+        {
+          "path": "codex_team/__main__.py",
+          "bytes": 64,
+          "sha256": "cf00601808adeba1c0a6a8b13326f6aa6b76e8616e69f6c0cf22bcf4c5e4e321",
+          "findings": []
+        },
+        {
+          "path": "codex_team/executor.py",
+          "bytes": 57640,
+          "sha256": "5f02b1d7c0401fa07a1501d98f2433374fcbda5652e8f66402a0081b1a7af388",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.1.dev0.dist-info/METADATA",
+          "bytes": 4118,
+          "sha256": "f4b38cccbdffe6f0ffb20ae12536ccb7840e1a1e0bd0a1d244c8885739651ff7",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.1.dev0.dist-info/WHEEL",
+          "bytes": 92,
+          "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.1.dev0.dist-info/entry_points.txt",
+          "bytes": 118,
+          "sha256": "f5705d768cf9639f37816224eba1a945dc514ed0d015644ff7665205329250c9",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.1.dev0.dist-info/top_level.txt",
+          "bytes": 11,
+          "sha256": "f7e09db4da00010279f74c1a99b2dc0a7ff99322dd73dc24bece71ee915ec900",
+          "findings": []
+        },
+        {
+          "path": "codex_team-0.3.1.dev0.dist-info/RECORD",
+          "bytes": 668,
+          "sha256": "133148686fa882a6f7cf0394764aec61534cf09e28aa955c4069f8b2bb37435b",
+          "findings": []
+        }
+      ],
+      "record_hashes": "PASS",
+      "sentinel_exclusion": "PASS"
+    }
+  ],
+  "scan_categories": {
+    "consumer_reference": "(?i)pixpool|hostcert|devstash|lauro.cesar",
+    "absolute_local_path": "/(?:home|media|Users)/[^\\s\\x22\\x27]+",
+    "credential_shape": "-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|AKIA[A-Z0-9]{16}|gh[pousr]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{24,}|https?://[^\\s/@:]+:[^\\s/@]+@",
+    "privacy_sentinel": "AUDIT_PRIVATE_SENTINEL_7F32"
+  },
+  "temporary_workspace": "/tmp/codex-team-fb77-lbvesz32",
+  "build_log": {
+    "path": "/tmp/codex-team-fb77-lbvesz32/build.log",
+    "classification": "external build log; not archive member; not copied into report or distribution"
+  },
+  "provenance_checks": {
+    "packaged_sha256": true,
+    "generic_rules_sha256": true
+  },
+  "verification": {
+    "unit_tests": "29 passed",
+    "candidate_version": "0.3.1.dev0 in temporary copy only; not release approval",
+    "historical_archives": "read-only; not replaced",
+    "publication": "none",
+    "git_mutations": "none"
+  },
+  "limits": [
+    "Static selected-pattern scan and include-boundary sentinel exercise do not prove absence of arbitrary secrets.",
+    "Discovery: all wheel/sdist under this submodule and root/dist; max-depth-3 root search excluding private state found no other candidates. No global disk or private session scan.",
+    "Candidate is offline local setup.py build with setuptools 66.1.1 / wheel 0.38.4; other backends/environments and future source additions require renewed archive review.",
+    "PROVENANCE source hashes are identifiers, not embedded source contents; upstream source/test identity claims not rederived in this audit.",
+    "Runtime filenames referenced by generic code and synthetic tests are not runtime file payloads."
+  ]
+}

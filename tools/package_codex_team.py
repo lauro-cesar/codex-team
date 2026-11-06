@@ -72,11 +72,16 @@ dependencies = []
 codex-team = "codex_team.executor:entrypoint"
 codex-team-start = "codex_team.executor:start_entrypoint"
 
+[tool.setuptools]
+include-package-data = false
+
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["codex_team"]
+namespaces = false
 ''')
     (project / 'setup.py').write_text('from setuptools import setup\nsetup()\n')
-    (project / 'MANIFEST.in').write_text('include PROVENANCE.json\nrecursive-include templates *.md\nrecursive-include tests *.py\n')
+    (project / 'MANIFEST.in').write_text('include PROVENANCE.json\ninclude templates/AGENTS.md\ninclude tests/test_team_executor.py\n')
     readme = '''# codex-team ''' + version + '''
 
 Executor local para equipes Codex com tmux, submódulos Git e filas persistentes.

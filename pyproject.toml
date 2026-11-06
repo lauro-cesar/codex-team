@@ -14,5 +14,10 @@ dependencies = []
 codex-team = "codex_team.executor:entrypoint"
 codex-team-start = "codex_team.executor:start_entrypoint"
 
+[tool.setuptools]
+include-package-data = false
+
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["codex_team"]
+namespaces = false
