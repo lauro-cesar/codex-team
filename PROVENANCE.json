@@ -1,0 +1,12 @@
+{
+  "version": "0.3.0",
+  "source": "tools/team_executor.py",
+  "source_sha256": "5dea9c99aed8e4599083c8413a5b0277457aae6a08dc44e61bc93565968b34f7",
+  "packaged_sha256": "5f02b1d7c0401fa07a1501d98f2433374fcbda5652e8f66402a0081b1a7af388",
+  "generic_rules_sha256": "56bd4c8cb2535b713fe39e4712bb1823c54acff42a7f87aa035a325e218f0aa3",
+  "behavior_ast_identical": true,
+  "default_effort": "low",
+  "default_model": null,
+  "configuration_policy": "fresh task sessions; explicit --continue; compact output",
+  "source_tests_sha256": "c7637d8abbc059ddf860ad0d4a2edb8c5b4a9421e2ad26dfceb804b0e999f2d7"
+}

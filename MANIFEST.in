@@ -1,0 +1,3 @@
+include PROVENANCE.json
+recursive-include templates *.md
+recursive-include tests *.py

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-team"
+version = "0.3.0"
+description = "Local tmux team controller with compact context and durable task queues"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+codex-team = "codex_team.executor:entrypoint"
+codex-team-start = "codex_team.executor:start_entrypoint"
+
+[tool.setuptools.packages.find]
+where = ["src"]

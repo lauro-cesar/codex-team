@@ -5,3 +5,6 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+
+# Local receipt records the final commit without a self-referential commit.
+/docs/evidence/PUBLICATION.json
