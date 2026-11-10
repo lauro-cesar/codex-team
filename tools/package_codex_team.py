@@ -83,70 +83,70 @@ namespaces = false
     (project / 'setup.py').write_text('from setuptools import setup\nsetup()\n')
     (project / 'MANIFEST.in').write_text('include PROVENANCE.json\ninclude templates/AGENTS.md\ninclude tests/test_team_executor.py\n')
     readme = '''# codex-team ''' + version + '''
+Local executor for Codex teams with tmux, Git submodules and durable task queues.
+Requires Python 3.10+, Git, tmux and a configured Codex CLI on a POSIX system.
+The Python package has no runtime dependencies beyond the standard library.
 
-Executor local para equipes Codex com tmux, submódulos Git e filas persistentes.
-Requer Python 3.10+, Git, tmux e a CLI Codex configurada, em sistema POSIX.
-O pacote Python não tem dependências de runtime além da biblioteca padrão.
-
-## Instalar a partir das fontes
+## Install from source
 
 ```sh
 python3 -m pip install .
 codex-team --version
-codex-team --root ./novo-time start --no-attach
+codex-team --root ./new-team start --no-attach
 ```
 
-Em instalações Python gerenciadas pelo sistema, use um venv ou pipx e mantenha
-seu bin/ no PATH. Não é necessário ignorar as proteções do gerenciador Python.
-`codex-team-start --root ./novo-time --no-attach` é um atalho equivalente.
-O primeiro start exige uma pasta nova ou vazia. Depois use ./team na raiz criada.
+For system-managed Python installations, use a venv or pipx and keep its bin/
+directory on PATH. There is no need to bypass Python package manager protections.
+`codex-team-start --root ./new-team --no-attach` is an equivalent shortcut.
+The first start requires a new or empty directory. Then use ./team in the created root.
 
-## Configurações de economia incluídas
+## Included cost-saving settings
 
-- Sessão nova por entrega; `--continue ID` retoma somente a mesma entrega.
-- Esforço padrão low; modelo herdado do Codex, sem troca automática ou retry pago.
-- `--context-file` fornece resumo de até 8000 caracteres sem chamada extra ao modelo.
-- JSON compacto; status com tarefas ativas e contadores; result/wait compactos.
-- Resultados pendentes mostram somente ID/estado; relatórios limitados e --full explícito.
-- Relatórios de até 100 palavras, contratos/evidências em arquivo e tarefas agrupadas.
-- Usage por delta cumulativo de sessão, separando métricas sem dupla contagem.
-- Agentes ociosos aguardam em FIFO sem chamadas ao modelo.
-- Terminal ocioso limpo com a frase Aguardando tarefas.; logs/resultados persistem.
-- Consulta do esquema já migrado sem criar lock de escrita desnecessário.
+- A new session per deliverable; `--continue ID` resumes only the same deliverable.
+- Default effort is low; the model is inherited from Codex, with no automatic switch or paid retry.
+- `--context-file` supplies a summary of up to 8000 characters without an extra model call.
+- Compact JSON; status includes active tasks and counters; compact result/wait output.
+- Pending results show only ID/state; reports are bounded, with explicit --full output.
+- Reports of up to 100 words, contracts/evidence in files and grouped tasks.
+- Usage is measured by cumulative session deltas, separating metrics without double counting.
+- Idle agents wait on a FIFO without model calls.
+- Idle terminals are cleared and display the waiting-for-tasks message; logs/results persist.
+- Already migrated schemas are queried without an unnecessary write lock.
 
 ```sh
 ./team config --effort low
-./team task backend --file tarefa.md --context-file contexto.md
-./team task backend --continue ID --message 'Correção da mesma entrega'
+./team task backend --file task.md --context-file context.md
+./team task backend --continue ID --message 'Correction to the same deliverable'
 ./team status
 ./team wait ID --timeout 50
 ./team result ID
 ./team usage --task ID
 ```
 
-Não há economia percentual garantida: compare medições equivalentes de usage.
-Cache integra entrada; raciocínio integra saída. Não some essas partes novamente.
-As instruções genéricas mantêm autorizações operacionais, isolamento Node e os
-checks obrigatórios de cada projeto; redução de contexto não dispensa validação.
+No percentage savings are guaranteed: compare equivalent usage measurements.
+Cached tokens are part of input; reasoning tokens are part of output. Do not add them again.
+The generic instructions preserve operational authorization, Node isolation and each
+project's required checks; reducing context does not waive validation.
 
-## Times existentes
+## Existing teams
 
-Instalar este pacote atualiza a CLI de instalação. Cada time existente usa sua
-própria cópia em tools/team_executor.py, preservada pela instalação. Atualizar outra raiz exige preservar seu estado/instruções, encerrar as entregas
-com ./team stop e atualizar sua cópia de forma coordenada antes de start.
-O pacote contém fontes selecionadas, testes e regras genéricas; dados, sessões,
-repositórios consumidores e configurações privadas não são entradas do build.
+Installing this package updates the installation CLI. Each existing team uses its
+own copy of tools/team_executor.py, which installation preserves. Updating another
+root requires preserving its state/instructions, finishing deliveries with ./team stop
+and coordinating the update to its copy before start.
+The package contains selected sources, tests and generic rules; data, sessions,
+consumer repositories and private configuration are excluded from build inputs.
 
-## Testes offline do pacote fonte
+## Offline source package tests
 
 ```sh
 PYTHONPATH=src python3 -B -m unittest discover -s tests
 ```
 
-Os testes usam banco temporário e eventos simulados; não chamam tmux/modelos/rede.
-PROVENANCE.json identifica hashes reais da origem, do executor empacotado e das
-instruções. Somente CONTROLLER_RULES foi adaptado para o template genérico atual;
-o restante da AST do executor é idêntico à origem.
+Tests use temporary databases and simulated events; they do not call tmux, models or the network.
+PROVENANCE.json records actual hashes of the source, packaged executor and instructions.
+Only CONTROLLER_RULES was adapted to the current generic template during extraction;
+the rest of the executor AST is identical to the source used for that extraction.
 '''
     (project / 'README.md').write_text(readme)
     provenance = {'version': version, 'source': 'tools/team_executor.py',
