@@ -1,5 +1,6 @@
 # codex-team 0.3.0
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/codex-team?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/codex-team)
 Local executor for Codex teams with tmux, Git submodules and durable task queues.
 Requires Python 3.10+, Git, tmux and a configured Codex CLI on a POSIX system.
 The Python package has no runtime dependencies beyond the standard library.
